@@ -1,91 +1,89 @@
-{
-        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
 
-        body {
-          font-family: 'Comic Neue', cursive;
-        }
+body {
+  font-family: 'Comic Neue', cursive;
+}
 
-        .cartoon-border {
-          border: 3px solid white;
-          border-radius: 15px;
-          box-shadow: 5px 5px 0px white;
-        }
+.cartoon-border {
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px white;
+}
 
-        .cartoon-button {
-          background-color: white;
-          color: black;
-          border: 3px solid white;
-          border-radius: 25px;
-          padding: 10px 20px;
-          font-weight: bold;
-          transition: all 0.3s;
-          box-shadow: 3px 3px 0px white;
-        }
+.cartoon-button {
+  background-color: white;
+  color: black;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 0px white;
+}
 
-        .cartoon-button:hover {
-          transform: translate(-3px, -3px);
-          box-shadow: 6px 6px 0px white;
-        }
+.cartoon-button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px white;
+}
 
-        @keyframes float {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-          100% { transform: translateY(0px); }
-        }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
 
-        .float-animation {
-          animation: float 3s ease-in-out infinite;
-        }
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
 
-        .menu-icon {
-          width: 30px;
-          height: 20px;
-          position: relative;
-          cursor: pointer;
-        }
+.menu-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
 
-        .menu-icon::before,
-        .menu-icon::after,
-        .menu-icon div {
-          background-color: white;
-          content: "";
-          display: block;
-          height: 3px;
-          border-radius: 3px;
-          margin: 5px 0;
-          transition: 0.5s;
-        }
+.menu-icon::before,
+.menu-icon::after,
+.menu-icon div {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
 
-        .menu-open::before {
-          transform: translateY(8px) rotate(135deg);
-        }
+.menu-open::before {
+  transform: translateY(8px) rotate(135deg);
+}
 
-        .menu-open::after {
-          transform: translateY(-8px) rotate(-135deg);
-        }
+.menu-open::after {
+  transform: translateY(-8px) rotate(-135deg);
+}
 
-        .menu-open div {
-          transform: scale(0);
-        }
+.menu-open div {
+  transform: scale(0);
+}
 
-        .timeline-dot::before {
-          content: "";
-          position: absolute;
-          width: 20px;
-          height: 20px;
-          background-color: white;
-          border-radius: 50%;
-          left: -10px;
-          top: 0;
-        }
+.timeline-dot::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  left: -10px;
+  top: 0;
+}
 
-        .timeline-line::before {
-          content: "";
-          position: absolute;
-          width: 3px;
-          height: 100%;
-          background-color: white;
-          left: 0;
-          top: 20px;
-        }
-      }
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  left: 0;
+  top: 20px;
+}
